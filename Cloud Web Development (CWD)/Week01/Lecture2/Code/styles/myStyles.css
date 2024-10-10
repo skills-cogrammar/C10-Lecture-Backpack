@@ -1,0 +1,37 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  /* margin: 0;
+  padding: 0; */
+}
+/* comment */
+body {
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-family: Arial;
+  background-color: cadetblue;
+}
+
+h2 {
+  background-color: black;
+}
+
+p {
+  font-family: Helvetica, "Times New Roman", Arial;
+  font-size: 40px;
+  color: brown;
+}
+
+.myClass {
+  color: chartreuse;
+  background-color: crimson;
+}
+
+img {
+  background-color: darkgray;
+  border: solid black 5px;
+  border-radius: 22px;
+  padding: 30px;
+  margin: 50px;
+}
