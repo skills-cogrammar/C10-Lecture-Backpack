@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overview</title>
+    <style>
+      ul > li {
+        color: antiquewhite;
+      }
+
+      h2 {
+        color: blue;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      #mainHeading {
+        background-color: bisque;
+      }
+    </style>
+    <link href="./styles/myStyles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="mainHeading">CSS Overview</h1>
+    <p style="color: black; font-size: 50px">
+      Cascading Style Sheets (CSS) is a language that is used to change the
+      presentation and look of a particular document that’s been written in a
+      markup language such as HTML. CSS is usually applied to web pages, but can
+      also be used in other areas, such as XML documents.
+    </p>
+
+    <a href="./author.html" class="myClass">Lecturer Info</a>
+
+    <p>We can add CSS to an html page in 3 ways:</p>
+    <ul>
+      <li>Inline Style</li>
+      <li>Internal CSS</li>
+      <li>External CSS</li>
+    </ul>
+
+    <h2 style="color: red">Images</h2>
+    <ol>
+      <li class="myClass">Bitmap Graphics</li>
+      <li>Vector Graphics</li>
+    </ol>
+    <img src="./images/ITPic.jpg" alt="Internet communication" />
+    <img src="./images/Classroom.png" alt="Classroom desks" />
+
+    <h2>Form</h2>
+    <form>
+      <label class="myClass">First name:</label>
+      <input type="text" />
+      <br />
+      <label>Surname:</label>
+      <input type="text" />
+      <br />
+      <label>Gender:</label>
+      <select>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="non-binary">Non-binary</option>
+        <option value="other">Other</option>
+        <option value="noValue">Do not want specify</option>
+      </select>
+      <br />
+      <label>Age:</label>
+      <input type="number" />
+    </form>
+    <p class="myClass">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati amet
+      consectetur, aperiam dolorem illum reiciendis in, cum animi sunt rerum
+      aliquid consequatur facere voluptatem corrupti? Excepturi id fugiat
+      corporis!
+    </p>
+  </body>
+</html>
