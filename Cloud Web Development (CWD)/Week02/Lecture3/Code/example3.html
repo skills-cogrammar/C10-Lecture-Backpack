@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid layout</title>
+    <style>
+      body {
+        width: 70%;
+        background-color: cadetblue;
+        margin: auto;
+      }
+
+      #container {
+        display: grid;
+      }
+
+      header {
+        grid-column: 1/13;
+        grid-row: 1;
+        background-color: darkgray;
+        text-align: center;
+      }
+
+      section {
+        grid-column: 1/9;
+        grid-row: 2;
+        background-color: antiquewhite;
+        border: 1px dashed darkblue;
+        /* border-width:;
+        border-style: ;
+        border-color:; */
+      }
+
+      aside {
+        grid-column: 9/13;
+        grid-row: 2;
+        background-color: burlywood;
+      }
+
+      footer {
+        grid-column: 1/13;
+        grid-row: 3;
+        background-color: darkgray;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>This is the header</h1>
+      </header>
+      <section>
+        <p>This is a section. It contains me! A paragraph with some text!</p>
+      </section>
+      <aside>
+        <p>I'm the aside</p>
+      </aside>
+      <footer>
+        <p>
+          <small>This is the footer</small>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
