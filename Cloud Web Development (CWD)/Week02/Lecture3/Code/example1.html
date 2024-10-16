@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        text-align: center;
+        margin: 0;
+        background-color: darkgray;
+      }
+
+      h2 {
+        font-size: 6vw;
+        color: crimson;
+        padding-top: 20vh;
+      }
+
+      .middle {
+        width: 80vw;
+        background-color: cadetblue;
+        height: 60vh;
+        margin: 13vh auto;
+      }
+
+      @media screen and (max-width: 650px) {
+        .middle {
+          width: 80vw;
+          background-color: darkgoldenrod;
+          height: 60vh;
+          margin: 13vh auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="middle">
+      <h2>Responsive Header</h2>
+    </div>
+  </body>
+</html>
