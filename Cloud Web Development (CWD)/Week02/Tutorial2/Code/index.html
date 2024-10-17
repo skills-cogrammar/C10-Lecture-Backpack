@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/script.js"></script>
+    <title>Responsive Calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" disabled value="" />
+      <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="addDisplay('7')">7</button>
+        <button onclick="addDisplay('8')">8</button>
+        <button onclick="addDisplay('9')">9</button>
+        <button onclick="addDisplay('/')">/</button>
+        <button onclick="addDisplay('4')">4</button>
+        <button onclick="addDisplay('5')">5</button>
+        <button onclick="addDisplay('6')">6</button>
+        <button onclick="addDisplay('*')">*</button>
+        <button onclick="addDisplay('1')">1</button>
+        <button onclick="addDisplay('2')">2</button>
+        <button onclick="addDisplay('3')">3</button>
+        <button onclick="addDisplay('-')">-</button>
+        <button onclick="addDisplay('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="addDisplay('+')">+</button>
+      </div>
+    </div>
+  </body>
+</html>
