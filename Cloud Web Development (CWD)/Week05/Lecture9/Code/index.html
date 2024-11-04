@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/myStyles.css" rel="stylesheet" type="text/css" />
+    <title>DOM Manipulation and Event Handling</title>
+  </head>
+  <body>
+    <h1 id="mainHeading">DOM Manipulation and Event Handling</h1>
+    <h2 onmouseover="over()" onmouseout="console.log('leave')">
+      The MERN Stack
+    </h2>
+    <ul id="mernStack"></ul>
+    <p class="oddItem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+      doloremque ullam nisi mollitia quaerat ex laborum vel in laboriosam itaque
+      debitis voluptates consectetur tempora, quisquam dignissimos porro vitae,
+      maxime ea.
+    </p>
+    <form>
+      <input
+        type="password"
+        placeholder="Please enter password"
+        name="password"
+      />
+      <button type="submit">Submit Password</button>
+    </form>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

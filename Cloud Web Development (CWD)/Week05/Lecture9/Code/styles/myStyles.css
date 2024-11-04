@@ -1,0 +1,22 @@
+h1 {
+  font-family: Arial;
+  background-color: cadetblue;
+  padding: 2%;
+}
+
+.oddItem {
+  color: chocolate;
+}
+
+.evenItem {
+  color: cornflowerblue;
+}
+
+.clicked {
+  color: black;
+  background-color: cornflowerblue;
+}
+
+.over {
+  border: 2px black solid;
+}
