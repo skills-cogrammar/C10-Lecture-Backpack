@@ -1,0 +1,15 @@
+{
+  "name": "momentstask",
+  "version": "1.0.0",
+  "main": "birthdayCountdown.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "countdown": "node birthdayCountdown.js"
+  },
+  "author": "Zahra Mohamed",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
