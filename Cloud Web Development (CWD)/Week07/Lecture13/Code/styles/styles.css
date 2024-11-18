@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: black;
+}
+
+header h1 {
+  font-size: 1.75rem;
+}
+
+.add-person-btn {
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-person-btn:hover {
+  background-color: deepskyblue;
+}
+
+.add-exam-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.people-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: fit-content;
+  transition: transform 0.5s ease;
+}
+
+.person:hover,
+.person img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  background-color: rgba(228, 214, 214, 0.6);
+}
+
+.person img {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1rem;
+  color: crimson;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .person {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .person {
+    width: 100%;
+  }
+}
