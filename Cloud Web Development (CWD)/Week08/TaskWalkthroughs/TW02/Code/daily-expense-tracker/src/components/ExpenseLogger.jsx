@@ -1,6 +1,12 @@
 function ExpenseLogger ({ expenses, setExpenses }) {
     // Create a function which asks the user for their expense and then 
-    // Use the entered value to update the expense state
+    function addExpense () {
+        const desc = prompt("Enter the name of your expense:");
+        const amount = Number(prompt("Enter the expense amount:"));
+
+        // Use the entered value to update the expense state
+        setExpenses([...expenses, {desc, amount}])
+    }
 
     return (
         <div>
@@ -9,7 +15,7 @@ function ExpenseLogger ({ expenses, setExpenses }) {
             <ul>
                 {expenses.map((expense, index) => (
                     <li key={index}>
-                        {expense.desciption}: {expense.amount.toFixed(2)}
+                        {expense.desc}: {expense.amount.toFixed(2)}
                     </li>
                 ))}
             </ul>

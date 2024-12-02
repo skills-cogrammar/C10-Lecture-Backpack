@@ -4,10 +4,10 @@ function BudgetManager ({budget, setBudget}) {
             <h2>Manage Budget</h2>
             <input
             type="number"
-            placeHolder="Set your daily budget"
-            {/*onChange= /*Enter a function here*/}
+            placeholder="Set your daily budget"
+            onChange={(event) => setBudget(Number(event.target.value))}
             />
-            <p>Current Budget: {/*Enter budget round off*/}</p>
+            <p>Current Budget: {budget.toFixed(2)}</p>
         </div>
     );
 }
